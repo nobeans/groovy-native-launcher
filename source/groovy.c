@@ -87,6 +87,7 @@ static const JstParamInfo groovyParameters[] = {
   { groovyListenParam,     JST_DOUBLE_PARAM, JST_TO_LAUNCHEE },
   { groovyLinevarParam,    JST_SINGLE_PARAM, JST_TO_LAUNCHEE },
   { groovyVersionParam,    JST_SINGLE_PARAM, JST_TO_LAUNCHEE },
+
   // native launcher supported extra params
   { groovyClasspathParam,  JST_DOUBLE_PARAM, JST_IGNORE | JST_CYGWIN_PATHLIST_CONVERT },
   { groovyJavahomeParam,   JST_DOUBLE_PARAM, JST_IGNORE | JST_CYGWIN_PATH_CONVERT },
@@ -172,6 +173,13 @@ static const JstParamInfo groovyshParameters[] = {
   { groovyHelpParam,       JST_SINGLE_PARAM, JST_TO_LAUNCHEE | JST_TERMINATING },
   { gantQuietParam,        JST_SINGLE_PARAM, JST_TO_LAUNCHEE },
   { gantVerboseParam,      JST_SINGLE_PARAM, JST_TO_LAUNCHEE },
+
+  // native launcher supported extra params
+  { groovyClasspathParam,   JST_DOUBLE_PARAM, JST_IGNORE | JST_CYGWIN_PATHLIST_CONVERT },
+  { groovyJavahomeParam,    JST_DOUBLE_PARAM, JST_IGNORE | JST_CYGWIN_PATH_CONVERT },
+  { groovyConfParam,        JST_DOUBLE_PARAM, JST_IGNORE | JST_CYGWIN_PATH_CONVERT },
+  { groovyClientParam,      JST_SINGLE_PARAM, JST_IGNORE },
+  { groovyServerParam,      JST_SINGLE_PARAM, JST_IGNORE },
   { NULL,                  0,                0 }
 } ;
 
